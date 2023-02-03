@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box !important;
+  font-family: "Courier New", Courier, monospace !important;
+}
+main {
+  background: black;
+  /* text glow */
+  text-shadow: 0 0 5px hsl(45, 50%, 75%);
+  color: hsl(45, 90%, 65%);
+}
+
+main:hover {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  border-radius: 2.5vmin !important;
+  border: 0.125vmin solid goldenrod !important;
+}
+:has(nav) {
+  background: black !important;
+}
+nav {
+  border-radius: 2.5vmin;
+  border: 0.125vmin solid goldenrod !important;
+  background: black !important;
+}
+nav > a,
+form > div {
+  border-radius: 1.12vmin !important;
+  border: 0.005vmin solid goldenrod !important;
+}
+form > div {
+  background-color: black;
+  border-radius: 2.5vmin !important;
+  margin: 2.5vmin !important;
+  padding: 1vmin !important;
+}
+form > div > div {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+nav > a:not(:first-child) {
+  border: 0.005vmin solid teal !important;
+}
+#theme-select-button,
+#font-select-button,
+nav > div > div > a > div > div,
+.dropdown {
+  display: none !important;
+}
+nav > div > div > :is(a, button) {
+  background-color: hsl(40, 10%, 15%) !important;
+}
+nav > div > div > :is(a:hover, button:hover) {
+  background-color: hsl(40, 25%, 30%) !important;
+  color: black !important;
+}
+main > div > div > div > div > div {
+  border-radius: 1.25vmin !important;
+  padding: 1vmin !important;
+  gap: 1vmin !important;
+  margin: 1vmin 1vmin 0 1vmin !important;
+}
+main > div > div > div > div > div:has(> div > div > span > span > img) {
+  border: 0.25vmin solid purple !important;
+  color: plum !important;
+}
+main > div > div > div > div > div:has(> div > div > svg) {
+  border: 0.25vmin solid darkgreen !important;
+  color: aquamarine;
+}
+::-webkit-scrollbar {
+  width: 0.2em !important;
+  background-color: black !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkcyan !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: cyan !important;
+}
+main .h-full.flex-col::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.dark main .dark\:bg-gray-800 {
+  background: transparent;
+}
+
+main > div:last-child {
+  background: transparent;
+}
+
+.dark main > div:last-child {
+  background: transparent;
+}
+
+/* Style Input */
+main > div.absolute > form {
+  margin: 0;
+  max-width: 100%;
+}
+
+main > div.absolute > div:last-child {
+  display: none;
+}
+
+main > div.absolute > form > div > div.flex.flex-col {
+  background-color: transparent;
+  box-shadow: none;
+  color: inherit;
+  border: 0;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+}
+
+main > div.absolute > form > div > div.flex.flex-col:before {
+  content: "> ";
+  position: absolute;
+  left: 0.25%;
+  font-size: 16px;
+  color: gold !important;
+  font-weight: bolder !important;
+}
+
+.btn-neutral {
+  background-color: hsl(40, 80%, 10%);
+  color: inherit;
+  border: none;
+}
+
+.btn-neutral:hover {
+  background-color: hsl(40, 50%, 15%);
+}
+
+.dark .btn-neutral {
+  background-color: hsl(40, 80%, 10%);
+  color: inherit;
+  border: none;
+}
+
+.btn-primary {
+  background-color: hsl(40, 80%, 10%);
+  color: inherit;
+}
+
+.btn-primary:hover {
+  background-color: hsl(40, 50%, 15%);
+  color: inherit;
+}
+
+.dark main .bg-gray-800 {
+  background-color: hsl(40, 80%, 10%);
+}
+
+.dark main .bg-gray-800.text-gray-200 {
+  color: inherit;
+}
+
+main .h-full.flex-col > div {
+  background: transparent;
+  border: none;
+}
+
+main .h-full.flex-col > div > div {
+  margin: 0;
+  margin-left: 1em;
+  padding-bottom: 0;
+  max-width: 100%;
+}
+
+.dark main .h-full.flex-col > div {
+}
+
+/* Font Color */
+main .h-full.flex-col > div {
+}
+
+.dark main .h-full.flex-col > div {
+}
+
+main .h-full.flex-col > div .prose {
+  color: inherit;
+}
+
+.dark main .h-full.flex-col > div .prose {
+  color: inherit;
+}
+
+/* Disable Human/AI icons */
+main .h-full.flex-col > div > div > div.items-end:first-child div:first-child {
+}
+
+main .h-full.flex-col > div {
+  position: relative;
+}
+
+main .h-full.flex-col > div > div > div.items-end:first-child {
+  /* position: absolute; */
+  justify-content: left;
+}
+
+main .h-full.flex-col > div > div > div.items-end:first-child div.text-xs {
+  position: absolute;
+  transform: 0 !important;
+  -webkit-transform: 0 !important;
+  justify-content: left;
+  justify-items: left;
+  top: -16px;
+  left: 65px;
+  visibility: visible !important;
+}
+
+pre {
+  border-radius: 1.25vmin !important;
+  border: 0.025vmin solid goldenrod !important;
+}
+pre > div {
+  margin: 0 !important;
+}
+.text-gray-800 {
+  color: inherit;
+}
+
+.dark main .dark\:text-gray-400 {
+  color: inherit;
+}
+
+.bg-gray-50,
+.bg-gray-100 {
+  background-color: hsl(40, 80%, 10%);
+  color: inherit;
+}
+
+button.bg-gray-50:hover,
+button.bg-gray-100:hover {
+  background-color: hsl(40, 50%, 15%);
+  color: inherit;
+}
+
+.text-gray-700 {
+  color: inherit;
+}
+
+.text-gray-900 {
+  color: white;
+}
+
+.dark main .dark\:bg-gray-700 {
+  background-color: hsl(40, 80%, 10%);
+  color: inherit;
+}
+
+.dark main .dark\:hover\:bg-gray-900:hover {
+  background-color: hsl(40, 50%, 15%);
+}
+
+.dark main .dark\:bg-white\/5 {
+  background-color: hsl(40, 80%, 10%);
+  color: inherit;
+}
+
+.dark main .dark\:text-gray-100 {
+  color: inherit;
+}
+
+.md\:bg-vert-light-gradient {
+  background: none;
+}
+
+.hide {
+  display: none !important;
+}
