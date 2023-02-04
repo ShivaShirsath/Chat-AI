@@ -6,15 +6,15 @@
    git clone https://github.com/ShivaShirsath/Chat-AI.git
    ```
 + Open Chrome
-+ Go to Extension
-+ Use Developer mode
-+ Select Unpacked Option
++ Go to Extension (🧩)
++ Manage extensions 
++ Select `Load Unpacked` Option
 + Navigate to location of repository
-+ Open
++ Click on `Select Folder`
 
 ### Uninstall
-+ Navigate to Chrome extension
-+ Click on ⋮ of Extension
-+ Select Remove
++ Navigate to Chrome Extension (🧩)
++ Click on `more option` or `⋮` of Chat-AI Extension
++ Select `Remove from Chrome`
 
-[•](https://chat.openai.com/chat)
+# [❃](https://chat.openai.com/chat)
