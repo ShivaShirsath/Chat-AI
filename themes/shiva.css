@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box !important;
+  scroll-behavior: smooth !important;
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+h1 {
+  margin: 0 !important;
+  padding: 5vmin !important;
+}
+
+main {
+  background: black !important;
+  text-shadow: 0 0 0.25vmin gold;
+  color: goldenrod;
+}
+
+main:hover {
+  position: fixed !important;
+  top: 0% !important;
+  left: 0% !important;
+  bottom: 0% !important;
+  right: 0% !important;
+  z-index: 100;
+}
+main > div,
+main > div > div > div {
+  margin: 0 !important;
+  background-color: black !important;
+}
+main > div:first-child {
+  border-radius: 2.5vmin !important;
+  margin: 1vmin !important;
+  border: 0.125vmin solid goldenrod !important;
+}
+main > div > div > div > div:last-child,
+main > div > div > div > div > div:last-child {
+  background-color: black !important;
+}
+
+div:has(> div > div > svg),
+div:has(> div > div > span > img) {
+  min-width: 99.5% !important;
+  width: 99.5% !important;
+  max-width: 99.5% !important;
+  margin: 0.5vmin !important;
+  padding: 1vmin !important;
+  display: flex !important;
+  border-radius: 2.5vmin !important;
+}
+
+div:has(> div > div > div > svg),
+div:has(> div > div > div > span > img) {
+  background-color: black !important;
+}
+
+div:has(> div > div > div > span > img) > div {
+  border: 0.125vmin solid purple !important;
+}
+
+div:has(> div > div > div > svg) > div {
+  border: 0.125vmin solid green !important;
+}
+
+.items-start {
+  color: orchid !important;
+}
+
+.markdown,
+.items-start {
+  opacity: 0.85 !important;
+}
+
+.markdown {
+  color: springgreen !important;
+}
+
+form + div {
+  display: none !important;
+}
+
+form {
+  padding: 2.5vmin !important;
+}
+
+button:has(svg):hover {
+  background-color: hsl(45, 50%, 25%, 0.5) !important;
+}
+
+button:has(svg),
+div:has(> textarea, button:has(svg)) {
+  border-radius: 0.5vmin !important;
+  margin: 0.25vmin !important;
+  backdrop-filter: blur(0.125vmin) !important;
+  background: rgba(63, 63, 63, 0.5) !important;
+}
+div:has(button:has(svg)) {
+  display: flex !important;
+  align-content: space-between !important;
+  justify-content: space-between !important;
+}
+
+div:has(form) {
+  background: linear-gradient(to bottom, transparent, goldenrod) !important;
+  background-size: 100% 500% !important;
+  border: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 1vmin !important;
+  background-color: black !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkcyan !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: cyan !important;
+}
+textarea + div > button {
+  background-color: goldenrod !important;
+  color: black !important;
+  opacity: 0.75 !important;
+}
+
+textarea + div > button:last-child {
+  background-color: tan !important;
+}
+
+textarea + div > button:hover {
+  opacity: 1 !important;
+}
+pre,
+pre > div :has(button > svg) {
+  margin: 0 !important;
+  padding: 0.5vmin !important;
+  border-radius: 1.25vmin !important;
+  border: 0.025vmin solid goldenrod !important;
+}
+
+pre > div :has(button > svg) {
+  background-color: hsl(45, 10%, 25%) !important;
+  text-shadow: 0 0 0 transparent !important;
+  border-radius: 0.75vmin !important;
+  font-weight: bolder !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+pre > div :has(button > svg) > button:hover {
+  background-color: transparent !important;
+}
+
+pre > div :has(button > svg) > button > svg {
+  color: goldenrod !important;
+}
+
+div:has(code) {
+  background-color: black !important;
+}
+
+/* Nav */
+
+:has(nav) {
+  background: black !important;
+}
+
+nav {
+  margin: 1vmin !important;
+  border-radius: 2.5vmin;
+  border: 0.125vmin solid goldenrod !important;
+  background: black !important;
+}
+
+nav > a,
+form > div > div {
+  border-radius: 1.12vmin !important;
+}
+
+nav > div > div > a > div > div {
+  display: none !important;
+}
+
+nav > a:first-child {
+  position: relative;
+  border: 0.001vmin solid transparent !important;
+}
+nav > a:first-child:hover {
+  color: goldenrod !important;
+}
+
+nav > a:first-child::before {
+  position: absolute !important;
+  content: "";
+  height: 0.01vmin !important;
+  background-color: tan !important;
+  left: 0 !important;
+  top: 112% !important;
+  right: 0 !important;
+  opacity: 0.25 !important;
+}
+
+nav > a:not(:first-child) {
+  border: 0.005vmin solid transparent !important;
+}
+
+nav > a:not(:first-child):hover {
+  color: springgreen !important;
+}
+nav > div > div > :is(a, button) {
+  background-color: transparent !important;
+}
+
+nav > div > div > :is(a:hover, button:hover) {
+  background-color: hsl(0, 0%, 5%) !important;
+  color: tan !important;
+}

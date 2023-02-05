@@ -22,7 +22,6 @@ if (typeof browser === "undefined") {
   browser = chrome;
 } else {
   let settings;
-  // Listen for a click on the browser action
   browser.browserAction.onClicked.addListener(function (tab) {
     browser.storage.local.get(
       { settings: { home_is_prompts: false } },

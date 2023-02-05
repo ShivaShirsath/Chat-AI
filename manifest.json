@@ -16,8 +16,8 @@
         "https://chat.openai.com/chat*"
       ],
       "js": [
-        "content-scripts/scraper.js",
-        "content-scripts/themes.js"
+        "themes/scraper.js",
+        "themes/themes.js"
       ],
       "run_at": "document_idle"
     }
@@ -25,7 +25,7 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "themes/none.css"
+        "themes/shiva.css"
       ],
       "matches": [
         "https://chat.openai.com/*"
