@@ -1,13 +1,11 @@
-name: Publish Chrome Extension
-
-on:
-  push:
-    branches:
-      - main
-      - master
-
+name: Build and Deploy
+on: [push]
+permissions:
+  contents: write
 jobs:
-  publish:
+  build-and-deploy:
+    name: Deploy on gh-pages if mention
+    if: startsWith(github.event.commits[0].message, 'ext')
     runs-on: ubuntu-latest
 
     steps:
